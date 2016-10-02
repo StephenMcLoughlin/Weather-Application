@@ -1,0 +1,146 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.weatherapplication.MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7EC0EE" >
+    
+<TableLayout
+    
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+	
+     <TableRow
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent" 
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/cityTxt"
+            android:textSize="18dp"
+            android:text="Android"
+            android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:gravity="left"/>
+
+        <TextView
+            android:id="@+id/maxTempTxt"
+            android:textSize="18dp"
+            android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:gravity="right"/>
+    </TableRow>
+
+  
+    <TableRow 
+        android:id="@+id/tableRow1" 
+        android:layout_height="wrap_content" 
+        android:layout_width="wrap_content">
+        <TextView
+            android:id="@+id/tempTxt"
+            android:textSize="30dp"
+            android:text="Weather"
+            android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:gravity="left"/>
+
+        <TextView
+            android:id="@+id/minTempTxt"
+            android:textSize="18dp"
+            android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:layout_gravity="fill_vertical"
+            android:gravity="right"/>
+    </TableRow>
+
+   
+    <TableRow
+        android:layout_height="wrap_content" 
+        android:layout_width="fill_parent" 
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/condTxt"
+            android:textSize="18dp"
+            android:text="Application"
+            android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:gravity="left"/>
+
+        <TextView
+            android:id="@+id/windSpeedTxt"
+            android:textSize="18dp"
+            android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:gravity="right"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_height="wrap_content" 
+        android:layout_width="fill_parent" 
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/humidityTxt"
+            android:textSize="18dp"
+            android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:gravity="left"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/pressureTxt"
+            android:textSize="18dp"
+            android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:gravity="left"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent" 
+        android:gravity="center_horizontal">
+        <ImageView
+            android:id="@+id/image"
+            android:src="@drawable/weather_icon"
+            android:layout_weight="1"
+            />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/enterCityTxt"
+            android:textSize="18dp"
+            android:text="Get Weather:"
+            android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:gravity="right"/>
+        <EditText
+            android:id="@+id/cityEditTxt"
+            android:hint="Enter City"
+            android:textColor="#ffffff"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:maxLines="1"
+            android:maxLength="16" />
+        
+    </TableRow>
+    
+    <TableRow
+        android:layout_height="wrap_content" 
+        android:layout_width="fill_parent" 
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/submitBtn"
+            android:layout_weight="1"
+            android:background="#3299CC"
+            android:textColor="#ffffff"
+            android:text="Submit"
+            android:gravity="center" />
+
+    </TableRow>
+    
+
+</TableLayout>
+</ScrollView>
